@@ -1,0 +1,211 @@
+/* Navbar */
+.navbar {
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand {
+    font-family: Viga;
+    font-size: 32px;
+}
+
+/* Jumbotron */
+.jumbotron {
+    background-image: url(img/homeee.jpg);
+    background-size: cover;
+    height: 540px;
+    text-align: center;
+    position: relative;
+}
+
+.jumbotron .container {
+    z-index: 1;
+    position: relative;
+}
+
+.jumbotron::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+    position: absolute;
+    bottom: 0;
+
+}
+
+.jumbotron .display-4 {
+    color: white;
+    margin-top: 150px;
+    font-weight: 200;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.jumbotron .display-4 span {
+    font-weight: 500;
+
+}
+/* Jumbotron end */
+
+
+
+/* Panel */
+
+
+.info-panel {
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5); 
+    border-radius: 12px;
+    margin-top: -100px;
+    background-color: #F9EBC8;
+    padding: 130px;
+}
+
+
+.info-panel img {
+    height: 450px;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.info-panel h3 {
+    font-size: 35px;
+    margin-top: 5px;
+    color: #112B3C;
+    font-weight: bold;
+}
+
+.info-panel p {
+    font-size: 16px;
+    color: black;
+    margin-top: -5px;
+    font-weight: 300;
+}
+/* Panel end */
+
+/* Working Space */
+.workingspace {
+	margin-top: 120px;
+	text-align: center;
+}
+
+.workingspace h3 {
+	font-size: 52px;
+	font-weight: 200;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+
+.workingspace span {
+	font-weight: 500;
+}
+
+.workingspace p {
+	font-size: 18px;
+	color: #acacac;
+	font-weight: 200;
+	margin: 30px 0;
+}
+
+/* Review */
+.review {
+	margin-top: 100px;
+}
+
+.review h5 {
+	text-align: center;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 24px;
+}
+
+.review figure img {
+	width: 60px;
+	margin: 20px 10px 10px;
+	opacity: 0.6;
+}
+
+.review figure img.utama {
+	width: 90px;
+	opacity: 1;
+	margin: 5px;
+}
+
+.review figure h5 {
+	font-size: 16px;
+	font-style: normal;
+	font-weight: bold;
+	color: rgb(224, 93, 93);
+}
+
+.review figure p {
+	color: #acacac;
+	font-size: 12px;
+	margin-top: -5px;
+
+}
+
+.review figcaption {
+	text-align: center;
+}
+
+
+/* Footer */
+.footer {
+	margin-top: 100px;
+}
+.footer p {
+	color: #acacac;
+	font-size: 16px;
+}
+
+
+/* Utility */
+.tombol {
+    border-radius: 40px;
+    background-color: #A0BCC2;
+    color: black;
+}
+
+/* Desktop Version */
+@media (min-width: 992px) {
+    .navbar-brand, .nav-link {
+        color:white !important;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.7);
+    }
+
+    .nav-link {
+        margin-right: 30px;
+    } 
+    
+    .nav-link:hover::after {
+        content: '';
+        display: block;
+        border-bottom: 3px solid #A0BCC2;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+
+    .jumbotron {
+        margin-top: -75px;
+        height: 640px;
+    }
+
+    .jumbotron .display-4 {
+        font-size: 62px;
+
+    }
+
+	.workingspace {
+		text-align: left;
+	}
+
+	.review h5 {
+		font-size: 32px;
+	}
+}
+
